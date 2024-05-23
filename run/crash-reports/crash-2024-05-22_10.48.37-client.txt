@@ -1,0 +1,252 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 2024-05-22 10:48:37
+Description: Initializing game
+
+java.lang.RuntimeException: null
+	at net.neoforged.neoforge.registries.GameData.postRegisterEvents(GameData.java:80) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+	at net.neoforged.neoforge.internal.NeoForgeStatesProvider.lambda$new$2(NeoForgeStatesProvider.java:20) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+	at net.neoforged.fml.ModLoader.handleInlineTransition(ModLoader.java:225) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:217) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {}
+	at net.neoforged.fml.ModLoader.dispatchAndHandleError(ModLoader.java:217) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:191) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:computing_frames}
+	at net.neoforged.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:191) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.neoforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:56) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:75) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.loading.ClientModLoader.begin(ClientModLoader.java:56) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:494) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:206) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[?:?] {}
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar%23171!/:?] {}
+	Suppressed: net.neoforged.fml.ModLoadingException: GeneralMachinery (generalmachinery) encountered an error during the common_setup event phase
+§7java.lang.IllegalArgumentException: Cannot get property BooleanProperty{name=lit, clazz=class java.lang.Boolean, values=[true, false]} as it does not exist in Block{minecraft:air}
+		at net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:214) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.lambda$postEventWithWrapInModOrder$32(ModLoader.java:364) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:computing_frames}
+		at net.neoforged.fml.ModList.forEachModInOrder(ModList.java:231) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:362) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:354) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.neoforge.registries.GameData.postRegisterEvents(GameData.java:89) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.internal.NeoForgeStatesProvider.lambda$new$2(NeoForgeStatesProvider.java:20) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.fml.ModLoader.handleInlineTransition(ModLoader.java:225) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:217) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {}
+		at net.neoforged.fml.ModLoader.dispatchAndHandleError(ModLoader.java:217) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:191) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:computing_frames}
+		at net.neoforged.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:191) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.neoforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:56) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+		at net.neoforged.neoforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:75) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+		at net.neoforged.neoforge.client.loading.ClientModLoader.begin(ClientModLoader.java:56) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+		at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:494) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+		at net.minecraft.client.main.Main.main(Main.java:206) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+		at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+		at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[?:?] {}
+		at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar%23171!/:?] {}
+	Caused by: java.lang.IllegalArgumentException: Cannot get property BooleanProperty{name=lit, clazz=class java.lang.Boolean, values=[true, false]} as it does not exist in Block{minecraft:air}
+		at net.minecraft.state.State.get(State.java:98) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A}
+		at net.minecraft.block.Blocks.lambda$litBlockEmission$47(Blocks.java:7631) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A}
+		at net.minecraft.block.AbstractBlock$AbstractBlockState.<init>(AbstractBlock.java:469) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A}
+		at net.minecraft.block.BlockState.<init>(BlockState.java:14) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A}
+		at net.minecraft.state.StateManager.method_28484(StateManager.java:61) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A}
+		at java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411) ~[?:?] {}
+		at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?] {}
+		at net.minecraft.state.StateManager.<init>(StateManager.java:59) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A}
+		at net.minecraft.state.StateManager$Builder.build(StateManager.java:157) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading}
+		at net.minecraft.block.Block.<init>(Block.java:189) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A}
+		at io.github.registry.GeneralBlocks.lambda$static$0(GeneralBlocks.java:27) ~[%23175!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredRegister$Blocks.lambda$register$0(DeferredRegister.java:386) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredRegister.lambda$register$1(DeferredRegister.java:203) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredRegister.lambda$addEntries$2(DeferredRegister.java:344) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.RegisterEvent.register(RegisterEvent.java:49) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredRegister.addEntries(DeferredRegister.java:344) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-7.2.0.jar%23116!/:?] {}
+		at net.neoforged.bus.EventBus.post(EventBus.java:386) ~[bus-7.2.0.jar%23116!/:?] {}
+		at net.neoforged.bus.EventBus.post(EventBus.java:365) ~[bus-7.2.0.jar%23116!/:?] {}
+		at net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:210) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		... 34 more
+	Suppressed: net.neoforged.fml.ModLoadingException: GeneralMachinery (generalmachinery) encountered an error during the common_setup event phase
+§7java.lang.NullPointerException: Trying to access unbound value: ResourceKey[minecraft:block / generalmachinery:foundry]
+		at net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:214) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.lambda$postEventWithWrapInModOrder$32(ModLoader.java:364) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:computing_frames}
+		at net.neoforged.fml.ModList.forEachModInOrder(ModList.java:231) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.postEventWithWrapInModOrder(ModLoader.java:362) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.postEventWrapContainerInModOrder(ModLoader.java:354) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.neoforge.registries.GameData.postRegisterEvents(GameData.java:89) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.internal.NeoForgeStatesProvider.lambda$new$2(NeoForgeStatesProvider.java:20) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.fml.ModLoader.handleInlineTransition(ModLoader.java:225) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:217) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {}
+		at net.neoforged.fml.ModLoader.dispatchAndHandleError(ModLoader.java:217) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:191) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:computing_frames}
+		at net.neoforged.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:191) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.neoforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:56) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+		at net.neoforged.neoforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:75) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+		at net.neoforged.neoforge.client.loading.ClientModLoader.begin(ClientModLoader.java:56) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+		at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:494) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+		at net.minecraft.client.main.Main.main(Main.java:206) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+		at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+		at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+		at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[?:?] {}
+		at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar%23171!/:?] {}
+	Caused by: java.lang.NullPointerException: Trying to access unbound value: ResourceKey[minecraft:block / generalmachinery:foundry]
+		at net.neoforged.neoforge.registries.DeferredHolder.value(DeferredHolder.java:102) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredHolder.get(DeferredHolder.java:116) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at io.github.registry.GeneralBlocks.lambda$static$1(GeneralBlocks.java:30) ~[%23175!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredRegister.lambda$register$0(DeferredRegister.java:184) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredRegister.lambda$register$1(DeferredRegister.java:203) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredRegister.lambda$addEntries$2(DeferredRegister.java:344) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.RegisterEvent.register(RegisterEvent.java:49) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.neoforge.registries.DeferredRegister.addEntries(DeferredRegister.java:344) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+		at net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-7.2.0.jar%23116!/:?] {}
+		at net.neoforged.bus.EventBus.post(EventBus.java:386) ~[bus-7.2.0.jar%23116!/:?] {}
+		at net.neoforged.bus.EventBus.post(EventBus.java:365) ~[bus-7.2.0.jar%23116!/:?] {}
+		at net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:210) ~[loader-2.0.17.jar%23106!/:2.0] {}
+		... 34 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.neoforged.neoforge.registries.GameData.postRegisterEvents(GameData.java:80) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+	at net.neoforged.neoforge.internal.NeoForgeStatesProvider.lambda$new$2(NeoForgeStatesProvider.java:20) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading}
+	at net.neoforged.fml.ModLoader.handleInlineTransition(ModLoader.java:225) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.ModLoader.lambda$dispatchAndHandleError$19(ModLoader.java:217) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {}
+	at net.neoforged.fml.ModLoader.dispatchAndHandleError(ModLoader.java:217) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:191) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:computing_frames}
+	at net.neoforged.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:191) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.neoforge.client.loading.ClientModLoader.lambda$begin$1(ClientModLoader.java:56) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.loading.ClientModLoader.lambda$createRunnableWithCatch$4(ClientModLoader.java:75) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.loading.ClientModLoader.begin(ClientModLoader.java:56) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23173%23176!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:494) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:206) ~[neoforge-20.4.234-minecraft-merged-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.1-v2-neoforge-20.4.234.jar%23174!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar%23106!/:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2394!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[?:?] {}
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar%23171!/:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.4
+	Minecraft Version ID: 1.20.4
+	Operating System: Linux (amd64) version 6.8.9-arch1-2
+	Java Version: 21.0.2, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 221689992 bytes (211 MiB) / 461373440 bytes (440 MiB) up to 8396996608 bytes (8008 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 3600 6-Core Processor
+	Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+	Microarchitecture: Zen 2
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: TU106 [GeForce RTX 2060 Rev. A]
+	Graphics card #0 vendor: NVIDIA Corporation (0x10de)
+	Graphics card #0 VRAM (MB): 288.00
+	Graphics card #0 deviceId: 0x1f08
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 16008.71
+	Virtual memory used (MB): 13392.34
+	Swap memory total (MB): 0.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 0 total; 
+	Launched Version: 20.4.234
+	Backend library: LWJGL version 3.3.2+13
+	Backend API: NVIDIA GeForce RTX 2060/PCIe/SSE2 GL version 4.6.0 NVIDIA 550.78, NVIDIA Corporation
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'neoforge'
+	Universe: 404
+	Type: Client (map_client.txt)
+	Locale: en_US
+	CPU: 12x AMD Ryzen 5 3600 6-Core Processor
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		sponge-mixin-0.13.1+mixin.0.8.5.jar mixin PLUGINSERVICE 
+		loader-2.0.17.jar slf4jfixer PLUGINSERVICE 
+		loader-2.0.17.jar runtime_enum_extender PLUGINSERVICE 
+		unprotect-1.2.0.jar unprotect PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-2.0.17.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar mixin-synthetic-package TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@2.0
+		lowcodefml@2.0
+		minecraft@2.0
+	Mod List: 
+		neoforge-20.4.234-minecraft-merged-1.20.4-net.fabr|Minecraft                     |minecraft                     |1.20.4              |COMMON_SET|Manifest: NOSIGNATURE
+		main                                              |GeneralMachinery              |generalmachinery              |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		                                                  |NeoForge                      |neoforge                      |20.4.234            |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: 45ad0680-3918-40a2-a82b-025166b2236d
+	FML: 20.4
+	NeoForge: net.neoforged:20.4.234
